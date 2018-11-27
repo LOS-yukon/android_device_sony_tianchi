@@ -19,8 +19,13 @@ TARGET_RECOVERY_FSTAB = device/sony/tianchi/rootdir/fstab.tianchi
 TARGET_BOOTLOADER_BOARD_NAME := D5303
 
 BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 2399141888
-#Reserve space for data encryption (5112839168-16384)
+# Reserve space for data encryption (5112839168-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5112822784
+
+# kernel configs
+TARGET_KERNEL_SOURCE := kernel/sony/msm8226
+TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=tianchi
 BOARD_KERNEL_CMDLINE += mem=1003M

@@ -14,5 +14,7 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_d5303-userdebug
+add_lunch_combo lineage_tianchi-user
+add_lunch_combo lineage_tianchi-userdebug
+add_lunch_combo lineage_tianchi-eng
 
